@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Akshay Talekar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-cnt">
+                <span class="logo-main">Akshay<span class="accent"> Talekar</span></span>
+                <span class="logo-sub">Cybersecurity Consultant</span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="checklist.html">Testing Checklist</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="contact.html" class="btn-cta">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section contact" style="padding-top: 120px;">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2>Let's Talk Security</h2>
+                        <p>Ready to strengthen your defenses? Reach out for a discovery call.</p>
+                        <ul class="contact-details">
+                            <li><i class="fas fa-envelope"></i> Contact@akshaytalekar.com</li>
+                            <li><i class="fas fa-envelope"></i> akshaytalekarr@gmail.com</li>
+                            <li><a href="https://www.instagram.com/aqshei/" target="_blank"
+                                    style="display:flex; align-items:center; gap:1rem; color:inherit; text-decoration:none;"><i
+                                        class="fab fa-instagram"></i> Akshay Talekar</a></li>
+                            <li><a href="https://www.facebook.com/akshay.talekar.687423/" target="_blank"
+                                    style="display:flex; align-items:center; gap:1rem; color:inherit; text-decoration:none;"><i
+                                        class="fab fa-facebook-f"></i> Akshay Talekar</a></li>
+                        </ul>
+                    </div>
+                    <form class="contact-form" action="https://formsubmit.co/akshaytalekarr@gmail.com" method="POST">
+                        <!-- Bot protection -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://akshaytalekar.com/thankyou.html">
+
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="email@company.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="How can I help you?"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary full-width">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2024 Akshay Talekar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

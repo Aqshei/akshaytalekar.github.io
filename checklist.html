@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Checklist - Akshay Talekar | 100+ Security Checks</title>
+    <meta name="description"
+        content="Comprehensive security testing checklist with 100+ specific checks covering reconnaissance, enumeration, and exploitation.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-cnt">
+                <span class="logo-main">Akshay<span class="accent"> Talekar</span></span>
+                <span class="logo-sub">Cybersecurity Consultant</span>
+            </a>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="checklist.html" class="active">Testing Checklist</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="contact.html" class="btn-cta">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="menuToggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" style="padding-top: 90px; padding-bottom: 1rem;">
+            <div class="container">
+                <h1>Security Testing <span class="accent">Checklist</span></h1>
+                <p class="subtitle">120+ manual security checks performed during every assessment</p>
+            </div>
+        </section>
+
+        <!-- Reconnaissance & Information Gathering -->
+        <section class="section bg-light" style="margin-top: -650px; padding-top: 0.5rem;">
+            <div class="container">
+                <h2 class="section-title">🎯 Reconnaissance & Information Gathering</h2>
+                <div class="checklist-grid">
+                    <div class="checklist-category">
+                        <h3>Passive Reconnaissance</h3>
+                        <ul class="checklist-items">
+                            <li>WHOIS lookup and domain information</li>
+                            <li>DNS record enumeration (A, AAAA, MX, TXT, NS)</li>
+                            <li>Reverse DNS lookup</li>
+                            <li>Certificate transparency log analysis</li>
+                            <li>Search engine dorking (Google, Bing, Shodan)</li>
+                            <li>GitHub/GitLab public repository analysis</li>
+                            <li>Pastebin and code dump searches</li>
+                            <li>Social media footprinting</li>
+                            <li>Wayback Machine historical analysis</li>
+                            <li>Public breach database checks</li>
+                        </ul>
+                    </div>
+
+                    <div class="checklist-category">
+                        <h3>Active Reconnaissance</h3>
+                        <ul class="checklist-items">
+                            <li>Subdomain enumeration (brute force & permutation)</li>
+                            <li>Port scanning (TCP/UDP)</li>
+                            <li>Service version detection</li>
+                            <li>Operating system fingerprinting</li>
+                            <li>SSL/TLS certificate analysis</li>
+                            <li>Technology stack identification</li>
+                            <li>Web server identification</li>
+                            <li>Framework and CMS detection</li>
+                            <li>JavaScript library enumeration</li>
+                            <li>Third-party service identification</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Web Application Testing -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">🌐 Web Application Security</h2>
+                <div class="checklist-grid">
+                    <div class="checklist-category">
+                        <h3>Authentication & Session Management</h3>
+                        <ul class="checklist-items">
+                            <li>Username enumeration testing</li>
+                            <li>Weak password policy analysis</li>
+                            <li>Brute force protection testing</li>
+                            <li>Multi-factor authentication bypass attempts</li>
+                            <li>Password reset flow security</li>
+                            <li>Session token randomness analysis</li>
+                            <li>Session fixation testing</li>
+                            <li>Session timeout validation</li>
+                            <li>Logout functionality verification</li>
+                            <li>Concurrent session handling</li>
+                            <li>Cookie security flags (HttpOnly, Secure, SameSite)</li>
+                            <li>OAuth/SAML implementation testing</li>
+                        </ul>
+                    </div>
+
+                    <div class="checklist-category">
+                        <h3>Authorization & Access Control</h3>
+                        <ul class="checklist-items">
+                            <li>Horizontal privilege escalation</li>
+                            <li>Vertical privilege escalation</li>
+                            <li>IDOR (Insecure Direct Object Reference)</li>
+                            <li>Path traversal vulnerabilities</li>
+                            <li>Forced browsing attempts</li>
+                            <li>API endpoint authorization</li>
+                            <li>Role-based access control bypass</li>
+                            <li>Function-level access control</li>
+                            <li>Missing authorization checks</li>
+                            <li>JWT token manipulation</li>
+                        </ul>
+                    </div>
+
+                    <div class="checklist-category">
+                        <h3>Input Validation</h3>
+                        <ul class="checklist-items">
+                            <li>SQL injection (all contexts)</li>
+                            <li>NoSQL injection testing</li>
+                            <li>Cross-Site Scripting (Reflected, Stored, DOM)</li>
+                            <li>XML External Entity (XXE) injection</li>
+                            <li>LDAP injection</li>
+                            <li>Command injection (OS)</li>
+                            <li>Template injection (SSTI)</li>
+                            <li>Expression language injection</li>
+                            <li>File upload security</li>
+                            <li>File inclusion (LFI/RFI)</li>
+                            <li>CRLF injection</li>
+                            <li>Header injection</li>
+                        </ul>
+                    </div>
+
+                    <div class="checklist-category">
+                        <h3>Business Logic</h3>
+                        <ul class="checklist-items">
+                            <li>Workflow bypass testing</li>
+                            <li>Race condition exploitation</li>
+                            <li>Price/quantity manipulation</li>
+                            <li>Coupon/discount abuse</li>
+                            <li>Referral system abuse</li>
+                            <li>Account takeover scenarios</li>
+                            <li>Multi-step process manipulation</li>
+                            <li>State transition flaws</li>
+                            <li>Time-of-check to time-of-use (TOCTOU)</li>
+                            <li>Business constraint bypass</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- API Security -->
+        <section class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">⚡ API Security Testing</h2>
+                <div class="checklist-grid">
+                    <div class="checklist-category">
+                        <h3>REST API Testing</h3>
+                        <ul class="checklist-items">
+                            <li>Endpoint discovery and enumeration</li>
+                            <li>HTTP method tampering</li>
+                            <li>Parameter pollution</li>
+                            <li>Mass assignment vulnerabilities</li>
+                            <li>Excessive data exposure</li>
+                            <li>Rate limiting bypass</li>
+                            <li>API versioning security</li>
+                            <li>CORS misconfiguration</li>
+                            <li>API key exposure</li>
+                            <li>JWT security testing</li>
+                        </ul>
+                    </div>
+
+                    <div class="checklist-category">
+                        <h3>GraphQL Testing</h3>
+                        <ul class="checklist-items">
+                            <li>Introspection query testing</li>
+                            <li>Query depth/complexity limits</li>
+                            <li>Batching attack testing</li>
+                            <li>Field suggestion enumeration</li>
+                            <li>Mutation authorization</li>
+                            <li>Subscription security</li>
+                            <li>Alias-based attacks</li>
+                            <li>Directive abuse</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client-Side Security -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">💻 Client-Side Security</h2>
+                <div class="checklist-grid">
+                    <div class="checklist-category">
+                        <h3>Browser Security</h3>
+                        <ul class="checklist-items">
+                            <li>Cross-Site Request Forgery (CSRF)</li>
+                            <li>Clickjacking protection</li>
+                            <li>Content Security Policy analysis</li>
+                            <li>HTTPS enforcement</li>
+                            <li>Secure cookie configuration</li>
+                            <li>Subresource Integrity (SRI)</li>
+                            <li>Open redirect vulnerabilities</li>
+                            <li>Postmessage security</li>
+                            <li>WebSocket security</li>
+                            <li>LocalStorage/SessionStorage secrets</li>
+                        </ul>
+                    </div>
+
+                    <div class="checklist-category">
+                        <h3>JavaScript Security</h3>
+                        <ul class="checklist-items">
+                            <li>Prototype pollution</li>
+                            <li>DOM clobbering</li>
+                            <li>Client-side validation bypass</li>
+                            <li>Sensitive data in JavaScript</li>
+                            <li>Source map exposure</li>
+                            <li>Debug code in production</li>
+                            <li>Third-party library vulnerabilities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mobile Application Security -->
+        <section class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">📱 Mobile Application Security</h2>
+                <div class="checklist-grid">
+                    <div class="checklist-category">
+                        <h3>Static Analysis</h3>
+                        <ul class="checklist-items">
+                            <li>Hardcoded credentials/secrets</li>
+                            <li>Insecure data storage</li>
+                            <li>Weak cryptography usage</li>
+                            <li>Code obfuscation analysis</li>
+                            <li>Permission over-requesting</li>
+                            <li>Backup flag configuration</li>
+                            <li>Debug mode detection</li>
+                            <li>Certificate pinning implementation</li>
+                        </ul>
+                    </div>
+
+                    <div class="checklist-category">
+                        <h3>Dynamic Analysis</h3>
+                        <ul class="checklist-items">
+                            <li>Network traffic interception</li>
+                            <li>API endpoint abuse</li>
+                            <li>SSL/TLS pinning bypass</li>
+                            <li>Root/Jailbreak detection bypass</li>
+                            <li>Screen caching analysis</li>
+                            <li>Clipboard data exposure</li>
+                            <li>Deep link exploitation</li>
+                            <li>Runtime manipulation (Frida)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Infrastructure & Cloud -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">☁️ Infrastructure & Cloud Security</h2>
+                <div class="checklist-grid">
+                    <div class="checklist-category">
+                        <h3>Server Configuration</h3>
+                        <ul class="checklist-items">
+                            <li>Default credentials testing</li>
+                            <li>Unnecessary services detection</li>
+                            <li>Security headers analysis</li>
+                            <li>SSL/TLS configuration</li>
+                            <li>Information disclosure in errors</li>
+                            <li>Directory listing exposure</li>
+                            <li>Backup file discovery</li>
+                            <li>Admin interface exposure</li>
+                        </ul>
+                    </div>
+
+                    <div class="checklist-category">
+                        <h3>Cloud Misconfigurations</h3>
+                        <ul class="checklist-items">
+                            <li>S3 bucket public access</li>
+                            <li>IAM overly permissive roles</li>
+                            <li>Security group misconfigurations</li>
+                            <li>Unencrypted data storage</li>
+                            <li>Logging and monitoring gaps</li>
+                            <li>Exposed management interfaces</li>
+                            <li>Secrets in environment variables</li>
+                            <li>Container security issues</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced Attacks -->
+        <section class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">🎯 Advanced Attack Vectors</h2>
+                <div class="checklist-grid">
+                    <div class="checklist-category">
+                        <h3>Server-Side Attacks</h3>
+                        <ul class="checklist-items">
+                            <li>Server-Side Request Forgery (SSRF)</li>
+                            <li>XML bomb (Billion Laughs)</li>
+                            <li>Deserialization vulnerabilities</li>
+                            <li>Remote code execution</li>
+                            <li>Server-side template injection</li>
+                            <li>Cache poisoning</li>
+                            <li>HTTP request smuggling</li>
+                            <li>Host header injection</li>
+                        </ul>
+                    </div>
+
+                    <div class="checklist-category">
+                        <h3>Specialized Testing</h3>
+                        <ul class="checklist-items">
+                            <li>Web cache deception</li>
+                            <li>HTTP parameter pollution</li>
+                            <li>Unicode normalization abuse</li>
+                            <li>Time-based blind attacks</li>
+                            <li>DNS rebinding</li>
+                            <li>WebRTC IP leakage</li>
+                            <li>Timing attack analysis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Comprehensive Testing Coverage</h2>
+                <p>Every assessment includes thorough manual validation of 100+ security checks</p>
+                <a href="contact.html" class="btn-primary btn-large">Request Security Assessment</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Akshay Talekar. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const navLinks = document.getElementById('navLinks');
+            const menuToggle = document.getElementById('menuToggle');
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        }
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                const navLinks = document.getElementById('navLinks');
+                const menuToggle = document.getElementById('menuToggle');
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
