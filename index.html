@@ -2,382 +2,228 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akshay Talekar - Cybersecurity Consultant | Manual Penetration Testing</title>
-    <meta name="description"
-        content="Expert manual penetration testing services for web apps, APIs, mobile apps, and cloud infrastructure. OSCP, CISSP, CEH certified.">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akshay Talekar | Cybersecurity Consultant</title>
+  content="Manual penetration testing for web apps, APIs, mobile apps, and cloud infrastructure." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet">
+  <meta property="og:title" content="Akshay Talekar | Cybersecurity Consultant" />
+  <meta property="og:description"
+    content="Manual penetration testing for web apps, APIs, mobile apps, and cloud infrastructure." />
+  <meta property="og:image" content="https://akshaytalekar.com/og-image.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="nav.js" defer></script>
 </head>
 
 <body>
-    <!-- Navigation Header -->
-    <header class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="logo-cnt">
-                <span class="logo-main">Akshay<span class="accent"> Talekar</span></span>
-                <span class="logo-sub">Cybersecurity Consultant</span>
-            </a>
-            <nav>
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="checklist.html">Testing Checklist</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="contact.html" class="btn-cta">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="menu-toggle" id="menuToggle" onclick="toggleMobileMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-main">Akshay <span class="accent">Talekar</span></span>
+        <span class="logo-sub">Cybersecurity Consultant</span>
+      </a>
+
+      <nav aria-label="Primary">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="active">HOME</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="checklist.html">CHECKLIST</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="contact.html" class="btn-cta">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <h1>
+          Protecting applications, platforms, and digital assets from
+          <span class="accent">real-world threats</span>
+        </h1>
+        <p class="subtitle">
+          I help startups, SaaS companies, and growing businesses identify security risks before attackers do — through
+          practical, manual security testing and clear remediation guidance.
+        </p>
+        <a href="contact.html" class="btn-primary btn-large">
+          Request Security Assessment
+        </a>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / TRUSTED BY -->
+    <section class="section-logos">
+      <div class="container">
+        <p class="logo-title">SECURED ASSETS FOR</p>
+        <div class="logo-grid">
+          <div class="logo-item">[ VERDA ]</div>
+          <div class="logo-item">[ OOREDOO ]</div>
+          <div class="logo-item">[ TRIPICA ]</div>
+          <div class="logo-item">[ GRAWE ]</div>
+          <div class="logo-item">[ EDF ]</div>
+          <div class="logo-item">[ LECLERC ]</div>
+          <div class="logo-item">[ DEVOLUTIONS ]</div>
         </div>
-    </header>
+      </div>
+    </section>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="container">
-                <h1>Protecting applications, platforms, and digital assets from <span class="accent">real-world
-                        threats</span></h1>
-                <p class="subtitle">I help startups, SaaS companies, and growing businesses identify security risks
-                    before attackers do — through practical, manual security testing and clear remediation guidance.</p>
-                <div class="hero-cta">
-                    <a href="contact.html" class="btn-primary">Request a Security Assessment</a>
-                </div>
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title">Security Services</h2>
 
+        <div class="grid">
+          <div class="card">
+            <h3>Web Application Security</h3>
+            <p>Manual testing of auth, access control, input validation, and business logic.</p>
+          </div>
+
+          <div class="card">
+            <h3>API Security Testing</h3>
+            <p>REST & GraphQL testing for auth bypass, data exposure, and rate limiting flaws.</p>
+          </div>
+
+          <div class="card">
+            <h3>Cloud Security Review</h3>
+            <p>AWS / GCP misconfiguration review and attack surface exposure.</p>
+          </div>
+
+          <div class="card">
+            <h3>Mobile App Security</h3>
+            <p>Android static & dynamic analysis with backend API abuse testing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <div class="container">
+        <h2 class="section-title">How I Work</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Scoping & Understanding</h3>
+            <p>Understand the application, business logic, and risk tolerance.</p>
+          </div>
+          <div class="card">
+            <h3>Manual Security Testing</h3>
+            <p>Hands-on testing focused on real exploitation — not automated scans.</p>
+          </div>
+          <div class="card">
+            <h3>Validation & Risk Analysis</h3>
+            <p>Only real, reproducible issues are reported.</p>
+          </div>
+          <div class="card">
+            <h3>Clear Reporting</h3>
+            <p>Technical details for developers and risk summaries for decision-makers.</p>
+          </div>
+          <div class="card">
+            <h3>Remediation Guidance</h3>
+            <p>Practical steps to fix issues and prevent recurrence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section bg-light">
+      <div class="container narrow">
+        <h2 class="section-title">About & Experience</h2>
+
+        <div class="about-content">
+          <h3>Who I Am</h3>
+          <p>
+            I'm a cybersecurity consultant specializing in manual penetration testing and vulnerability assessment.
+            With certifications including OSCP, CISSP, CEH, and AWS Security Specialty, I bring a comprehensive
+            understanding of security across web applications, APIs, mobile apps, and cloud infrastructure.
+          </p>
+
+          <div class="stats-grid">
+            <div class="stat-item">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Years Experience</span>
             </div>
-
-
-            <!-- Trusted By (In Hero) -->
-            <div class="marquee-section-hero">
-                <p class="marquee-title">Trusted by Global security Teams</p>
-                <div class="marquee-track">
-                    <div class="marquee-content">
-                        <span>VERDA</span>
-                        <span>Ooredoo</span>
-                        <span>triPica</span>
-                        <span>GRAWE</span>
-                        <span>EDF</span>
-                        <span>E.Leclerc</span>
-                        <span>Devolutions</span>
-                    </div>
-                    <div class="marquee-content">
-                        <span>VERDA</span>
-                        <span>Ooredoo</span>
-                        <span>triPica</span>
-                        <span>GRAWE</span>
-                        <span>EDF</span>
-                        <span>E.Leclerc</span>
-                        <span>Devolutions</span>
-                    </div>
-                </div>
+            <div class="stat-item">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Projects Secured</span>
             </div>
-
-            <!-- Certifications (Technical Expertise) - moved into Hero -->
-            <div class="container cert-container">
-                <p class="marquee-title" style="margin-bottom: 1.1rem;">Industry Credentials</p>
-                <div class="cert-grid">
-                    <div class="cert-card">
-                        <div class="cert-icon">🛡️</div>
-                        <div class="cert-title">OSCP</div>
-                        <div class="cert-org">OffSec Certified Professional</div>
-                    </div>
-                    <div class="cert-card">
-                        <div class="cert-icon">🔐</div>
-                        <div class="cert-title">CISSP</div>
-                        <div class="cert-org">ISC2 Certified</div>
-                    </div>
-                    <div class="cert-card">
-                        <div class="cert-icon">⚔️</div>
-                        <div class="cert-title">CEH</div>
-                        <div class="cert-org">Certified Ethical Hacker</div>
-                    </div>
-                    <div class="cert-card">
-                        <div class="cert-icon">☁️</div>
-                        <div class="cert-title">AWS Security</div>
-                        <div class="cert-org">Specialty Certified</div>
-                    </div>
-                </div>
+            <div class="stat-item">
+              <span class="stat-number">100+</span>
+              <span class="stat-label">Critical Findings</span>
             </div>
-        </section>
+          </div>
 
-        <!-- Services Section -->
-        <section id="services" class="section">
-            <div class="container">
-                <h2 class="section-title">Security Services</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon">🌐</div>
-                        <h3>Web Application Security Assessment</h3>
-                        <p>Manual security testing of web applications to identify vulnerabilities in authentication,
-                            authorization, input validation, and business logic. Testing is aligned with OWASP Top 10
-                            and real-world attack scenarios.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">🔍</div>
-                        <h3>Vulnerability Assessment & Penetration Testing (VAPT)</h3>
-                        <p>End-to-end security testing to discover, validate, and document exploitable weaknesses across
-                            web applications, APIs, and infrastructure, with clear risk prioritization.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">⚡</div>
-                        <h3>API Security Assessment</h3>
-                        <p>Focused testing of REST and GraphQL APIs to uncover issues related to broken authentication,
-                            excessive data exposure, rate limiting bypass, and token misuse.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">☁️</div>
-                        <h3>Cloud Security Configuration Review</h3>
-                        <p>Review of cloud environments (AWS / GCP / Azure) to identify misconfigurations, exposed
-                            services, insecure storage, and excessive permissions that can lead to breaches.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">📱</div>
-                        <h3>Mobile Application Security Assessment (Android)</h3>
-                        <p>Static and dynamic testing of Android applications to detect insecure data storage, improper
-                            permissions, weak encryption, and backend API abuse.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">🎯</div>
-                        <h3>Attack Surface Discovery & Exposure Analysis</h3>
-                        <p>Identification of exposed domains, subdomains, services, and forgotten assets to give
-                            organizations full visibility into their external attack surface.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+          <h3>My Approach</h3>
+          <p>
+            Unlike automated scanners that generate noise and false positives, I focus on manual, context-aware testing.
+            Every vulnerability I report is manually validated, includes proof-of-concept, and comes with clear
+            remediation guidance.
+            I don't just find vulnerabilities—I help you understand their real-world impact and how to fix them.
+          </p>
 
+          <h3>What Sets Me Apart</h3>
+          <ul class="bullets">
+            <li><strong>Manual-First Testing:</strong> I dig deep into business logic, authentication flows, and complex
+              attack chains that automated tools miss completely.</li>
+            <li><strong>Clear Communication:</strong> Reports designed for both technical teams and executives, with
+              actionable recommendations and business impact analysis.</li>
+            <li><strong>Remediation Support:</strong> I don't disappear after delivering the report. I help your team
+              understand fixes and verify remediation.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
+    <!-- CREDENTIALS -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Industry Credentials</h2>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+          <div class="card" style="text-align: center;">
+            <div style="font-size: 2.5rem; margin-bottom: 1rem;">🛡️</div>
+            <h3 style="color: var(--accent); margin-bottom: 0.5rem;">OSCP</h3>
+            <p style="font-size: 0.8rem; text-transform: uppercase;">OffSec Certified Professional</p>
+          </div>
+          <div class="card" style="text-align: center;">
+            <div style="font-size: 2.5rem; margin-bottom: 1rem;">🔐</div>
+            <h3 style="color: var(--accent); margin-bottom: 0.5rem;">CISSP</h3>
+            <p style="font-size: 0.8rem; text-transform: uppercase;">ISC2 Certified</p>
+          </div>
+          <div class="card" style="text-align: center;">
+            <div style="font-size: 2.5rem; margin-bottom: 1rem;">⚔️</div>
+            <h3 style="color: var(--accent); margin-bottom: 0.5rem;">CEH</h3>
+            <p style="font-size: 0.8rem; text-transform: uppercase;">Certified Ethical Hacker</p>
+          </div>
+          <div class="card" style="text-align: center;">
+            <div style="font-size: 2.5rem; margin-bottom: 1rem;">☁️</div>
+            <h3 style="color: var(--accent); margin-bottom: 0.5rem;">AWS Security</h3>
+            <p style="font-size: 0.8rem; text-transform: uppercase;">Specialty Certified</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- How I Work -->
-        <section id="process" class="section bg-light">
-            <div class="container">
-                <h2 class="section-title">How I Work</h2>
-                <div class="process-steps">
-                    <div class="step">
-                        <span class="step-num">01</span>
-                        <h3>Scoping & Understanding</h3>
-                        <p>Understand the application, business logic, and risk tolerance.</p>
-                    </div>
-                    <div class="step">
-                        <span class="step-num">02</span>
-                        <h3>Manual Security Testing</h3>
-                        <p>Hands-on testing focused on real exploitation — not automated scans.</p>
-                    </div>
-                    <div class="step">
-                        <span class="step-num">03</span>
-                        <h3>Validation & Risk Analysis</h3>
-                        <p>Only real, reproducible issues are reported.</p>
-                    </div>
-                    <div class="step">
-                        <span class="step-num">04</span>
-                        <h3>Clear Reporting</h3>
-                        <p>Technical details for developers and risk summaries for decision-makers.</p>
-                    </div>
-                    <div class="step">
-                        <span class="step-num">05</span>
-                        <h3>Remediation Guidance</h3>
-                        <p>Practical steps to fix issues and prevent recurrence.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section class="cta">
+      <div class="container">
+        <h2>120+ manually validated security checks</h2>
+        <p>No scanners. No false positives. Just real risk.</p>
+        <a href="contact.html" class="btn-primary btn-large">Let’s Talk</a>
+      </div>
+    </section>
+  </main>
 
-        <!-- What You Get & Who This Is For -->
-        <section class="section">
-            <div class="container">
-                <h2 class="section-title">Why Work With Me</h2>
-
-                <div class="value-prop-grid">
-                    <!-- What You Get -->
-                    <div class="value-card">
-                        <div class="value-header">
-                            <div class="value-icon">✅</div>
-                            <h3>What You Get</h3>
-                            <p class="value-subtitle">Real security testing, not automated noise</p>
-                        </div>
-                        <ul class="value-list">
-                            <li><strong>Verified findings</strong> — Only exploitable vulnerabilities</li>
-                            <li><strong>Clear impact proof</strong> — Show exactly what's at risk</li>
-                            <li><strong>Risk-based ratings</strong> — Prioritize what matters</li>
-                            <li><strong>Actionable fixes</strong> — Step-by-step remediation</li>
-                            <li><strong>Executive summaries</strong> — Reports for all stakeholders</li>
-                            <li><strong>Re-testing included</strong> — Verify fixes work</li>
-                        </ul>
-                    </div>
-
-                    <!-- Who This Is For -->
-                    <div class="value-card">
-                        <div class="value-header">
-                            <div class="value-icon">👥</div>
-                            <h3>Perfect For</h3>
-                            <p class="value-subtitle">Teams who need real security answers</p>
-                        </div>
-                        <ul class="value-list">
-                            <li><strong>SaaS & Tech Startups</strong> — Building secure products</li>
-                            <li><strong>SMBs</strong> — Growing without security debt</li>
-                            <li><strong>Fast Dev Teams</strong> — Shipping features safely</li>
-                            <li><strong>Pre-Audit Companies</strong> — Preparing for compliance</li>
-                            <li><strong>Security-First Founders</strong> — Protecting customers</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="guarantee-banner">
-                    <strong>No noise. No false positives. No tool-generated fluff.</strong>
-                    <span>Just real vulnerabilities with clear fixes.</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Who This Is For -->
-        <section id="about" class="section bg-light">
-            <div class="container">
-                <h2 class="section-title">About & Experience</h2>
-
-                <div class="stats-container">
-                    <div class="stat-item">
-                        <span class="stat-val">5+</span>
-                        <span class="stat-label">Years Experience</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-val">50+</span>
-                        <span class="stat-label">Projects Secured</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-val">100+</span>
-                        <span class="stat-label">Critical Bugs Found</span>
-                    </div>
-                </div>
-
-                <!-- About Content -->
-                <div class="about-content-wrapper">
-                    <div class="about-section">
-                        <div class="about-header">
-                            <div class="about-icon">👨‍💻</div>
-                            <h3>Who I Am</h3>
-                        </div>
-                        <p class="about-text">
-                            I'm a cybersecurity consultant specializing in manual penetration testing and vulnerability
-                            assessment.
-                            With certifications including <strong class="highlight">OSCP, CISSP, CEH, and AWS Security
-                                Specialty</strong>,
-                            I bring a comprehensive understanding of security across web applications, APIs, mobile
-                            apps, and cloud infrastructure.
-                        </p>
-                    </div>
-
-                    <div class="about-section">
-                        <div class="about-header">
-                            <div class="about-icon">🛡️</div>
-                            <h3>My Approach</h3>
-                        </div>
-                        <p class="about-text">
-                            Unlike automated scanners that generate noise and false positives, I focus on <strong
-                                class="highlight">manual, context-aware testing</strong>.
-                            Every vulnerability I report is manually validated, includes proof-of-concept, and comes
-                            with clear remediation guidance.
-                            I don't just find vulnerabilities—I help you understand their real-world impact and how to
-                            fix them.
-                        </p>
-                    </div>
-
-                    <div class="about-section">
-                        <div class="about-header">
-                            <div class="about-icon">⭐</div>
-                            <h3>What Sets Me Apart</h3>
-                        </div>
-                        <div class="about-features">
-                            <div class="feature-card">
-                                <div class="feature-icon">🎯</div>
-                                <h4>Manual-First Testing</h4>
-                                <p>I dig deep into business logic, authentication flows, and complex attack chains that
-                                    automated tools miss completely.</p>
-                            </div>
-
-                            <div class="feature-card">
-                                <div class="feature-icon">📊</div>
-                                <h4>Clear Communication</h4>
-                                <p>Reports designed for both technical teams and executives, with actionable
-                                    recommendations and business impact analysis.</p>
-                            </div>
-
-                            <div class="feature-card">
-                                <div class="feature-icon">🔄</div>
-                                <h4>Remediation Support</h4>
-                                <p>I don't disappear after delivering the report. I help your team understand fixes and
-                                    verify remediation.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Trusted By Section - Relocated -->
-        <section class="section trusted-by-section">
-            <div class="container">
-                <h3 class="trusted-title">Trusted by Security Teams At</h3>
-                <div class="trusted-slideshow">
-                    <div class="trusted-track">
-                        <div class="trusted-logo">VERDA</div>
-                        <div class="trusted-logo">Ooredoo</div>
-                        <div class="trusted-logo">triPica</div>
-                        <div class="trusted-logo">GRAWE</div>
-                        <div class="trusted-logo">EDF</div>
-                        <div class="trusted-logo">E.Leclerc</div>
-                        <div class="trusted-logo">Devolutions</div>
-                        <div class="trusted-logo">VERDA</div>
-                        <div class="trusted-logo">Ooredoo</div>
-                        <div class="trusted-logo">triPica</div>
-                        <div class="trusted-logo">GRAWE</div>
-                        <div class="trusted-logo">EDF</div>
-                        <div class="trusted-logo">E.Leclerc</div>
-                        <div class="trusted-logo">Devolutions</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-        <!-- Final CTA -->
-        <section class="section cta-section">
-            <div class="container text-center">
-                <h2>Ready to Secure Your Application?</h2>
-                <p>If you want to understand your real security risks — and how to fix them — let’s talk.</p>
-                <a href="contact.html" class="btn-primary btn-large">Request a Security Assessment</a>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2025 Akshay Talekar. All rights reserved.</p>
-    </footer>
-
-    <script>
-        function toggleMobileMenu() {
-            const navLinks = document.getElementById('navLinks');
-            const menuToggle = document.getElementById('menuToggle');
-            navLinks.classList.toggle('active');
-            menuToggle.classList.toggle('active');
-        }
-
-        // Close menu when clicking on a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                const navLinks = document.getElementById('navLinks');
-                const menuToggle = document.getElementById('menuToggle');
-                navLinks.classList.remove('active');
-                menuToggle.classList.remove('active');
-            });
-        });
-    </script>
-    
+  <footer class="footer">
+    <p>&copy; 2020 Akshay Talekar</p>
+  </footer>
 </body>
-
 
 </html>
