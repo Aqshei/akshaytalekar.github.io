@@ -136,7 +136,8 @@ h3,
 .container {
   max-width: 1200px;
   margin: auto;
-  padding: 0 1.5rem;
+  padding: 0 3rem;
+  /* Increased padding to push content away from edges */
 }
 
 .container.narrow {
